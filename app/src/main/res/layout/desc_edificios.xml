@@ -8,19 +8,32 @@
 
     <ImageView
         android:id="@+id/img"
-        android:layout_width="200dp"
+        android:layout_width="0dp"
         android:layout_height="200dp"
         android:layout_marginEnd="76dp"
-        android:src="@drawable/ed_a"
         app:layout_constraintBottom_toTopOf="@+id/Edificio"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
+        android:clickable="true"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="34dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginStart="26dp"
+        android:src="@drawable/info"
+        app:layout_constraintBottom_toBottomOf="@+id/img"
+        app:layout_constraintEnd_toStartOf="@+id/img"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/Edificio"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Edificio B"
+        android:text="Edificio"
         android:textSize="35dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/Scroll"
@@ -39,6 +52,7 @@
         app:layout_constraintTop_toBottomOf="@+id/Edificio">
 
         <RelativeLayout
+            android:id="@+id/RelativeView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="70dp">
@@ -47,54 +61,56 @@
                 android:id="@+id/tit1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Servicios a usuarios"
+                android:layout_marginLeft="15dp"
+                android:text="Titulo 1"
                 android:textSize="30dp"
-                android:textStyle="italic"
-                android:layout_marginLeft="15dp" />
+                android:textStyle="italic" />
 
             <TextView
                 android:id="@+id/desc1"
-                android:layout_below="@+id/tit1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="- Orientación para uso de los servicios (primer semestre).\n- Consulta interna o préstamo en sala.\n- Préstamo a domicilio (o externo).\n- Préstamo de cubículos de estudio.\n- Catalogo para público.\n- Acceso libre a internet.\n- Acceso a recursos bibliográficos electrónicos"
-                android:textSize="15dp"
-                android:layout_marginLeft="30dp"/>
+                android:layout_below="@+id/tit1"
+                android:layout_marginLeft="30dp"
+                android:text="Descripcion 1"
+                android:textSize="15dp" />
 
             <TextView
                 android:id="@+id/tit2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Titulo 2"
-                android:textSize="30dp"
-                android:textStyle="italic"
+                android:layout_below="@+id/desc1"
                 android:layout_marginLeft="15dp"
-                android:layout_below="@+id/desc1"/>
+                android:text=""
+                android:textSize="30dp"
+                android:textStyle="italic" />
+
             <TextView
                 android:id="@+id/desc2"
-                android:text="Descripcion 2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tit2"
-                android:layout_marginLeft="30dp"/>
+                android:layout_marginLeft="30dp"
+                android:text="" />
 
             <TextView
                 android:id="@+id/tit3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Titulo 3"
-                android:textSize="30dp"
-                android:textStyle="italic"
+                android:layout_below="@+id/desc2"
                 android:layout_marginLeft="15dp"
-                android:layout_below="@+id/desc2"/>
+                android:text=""
+                android:textSize="30dp"
+                android:textStyle="italic" />
+
             <TextView
                 android:id="@+id/desc3"
-                android:text="Descripcion 3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tit3"
-                android:textSize="15dp"
-                android:layout_marginLeft="30dp"/>
+                android:layout_marginLeft="30dp"
+                android:text=""
+                android:textSize="15dp" />
         </RelativeLayout>
     </ScrollView>
 
