@@ -1,17 +1,16 @@
 package com.example.baldoalberto.infoitm;
 
-
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 public class Inicio extends Fragment{
@@ -20,9 +19,10 @@ public class Inicio extends Fragment{
     String[] ed={"Edificio A", "Edificio B", "Edificio D", "Edificio E", "Edificio F", "Edificio G", "Edificio H", "Edificio J", "Edificio L", "Edificio M", "Edificio Q", "Edificio V", "Edificio X"};
     String[] descripcionEd ={"En este edificio se encuentra las oficinas de dirección y tramites con financieros.", "En este edificio se encuentra la biblioteca y talleres de lectura.", "En este edificio se encuentra los cubículos de los maestros de Contabilidad.", "En este edificio se encuentran el almacén de Ing. Eléctrica y algunos cubículos de los maestros de esta area.", "En este edificio se encuentra el departamento de Ing. Sistemas Computacionales, así como los cubículos de los maestros de esta misma area.", " En este edificio se encuentra los laboratorios de computación, mantenimiento de cómputo y algunos cubículos de los maestros de esta área.", "En este edificio se encuentra los almacenes de limpieza y el préstamo de materiales pesados.", "En este edificio se encuentra las oficinas del departamento de idiomas, así como oficinas y salones de clases.", "En este edificio se encuentra vinculación.", "En este edificio se encuentran los talleres de Ing. Mecánica y el Servicio Médico.", "En este edificio se encuentran los laboratorios de química, algunos cubículos de los maestros y un almacén de este departamento.", "En este edificio se encuentran los coordinadores de las carreras, el departamento de servicios escolares, el departamento académico de Ing. Química, además de los encargados de servicio social, titulación y traslados. ", "En este edificio se encuentra los laboratorios de Electrónica, un almacén de materiales y algunos cubículos de maestros de esta area."};
     Integer[] imgid={R.drawable.ed_a,R.drawable.inicio,R.drawable.inicio,R.drawable.ed_e,R.drawable.ed_f,R.drawable.ed_g,R.drawable.inicio,R.drawable.ed_j,R.drawable.ed_l,R.drawable.ed_m,R.drawable.inicio,R.drawable.ed_v,R.drawable.inicio};
+    static int cont = 0;
+    static String txt;
 
-
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, Bundle savedInstanceState){
 
         View v = inflater.inflate(R.layout.inicio, container, false);
 
@@ -39,67 +39,67 @@ public class Inicio extends Fragment{
                 {
                     case 0:
                         Desc desc = new Desc(i);
-                        getFragmentManager().beginTransaction().replace(R.id.fragment, desc, null).addToBackStack(null).commit();
+                        getFragmentManager().beginTransaction().setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right).replace(R.id.fragment, desc, null).addToBackStack(null).commit();
                         break;
 
                     case 1:
                         desc = new Desc(i);
-                        getFragmentManager().beginTransaction().replace(R.id.fragment, desc, null).addToBackStack(null).commit();
+                        getFragmentManager().beginTransaction().setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right).replace(R.id.fragment, desc, null).addToBackStack(null).commit();
                         break;
 
                     case 2:
                         desc = new Desc(i);
-                        getFragmentManager().beginTransaction().replace(R.id.fragment, desc, null).addToBackStack(null).commit();
+                        getFragmentManager().beginTransaction().setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right).replace(R.id.fragment, desc, null).addToBackStack(null).commit();
                         break;
 
                     case 3:
                         desc = new Desc(i);
-                        getFragmentManager().beginTransaction().replace(R.id.fragment, desc, null).addToBackStack(null).commit();
+                        getFragmentManager().beginTransaction().setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right).replace(R.id.fragment, desc, null).addToBackStack(null).commit();
                         break;
 
                     case 4:
                         desc = new Desc(i);
-                        getFragmentManager().beginTransaction().replace(R.id.fragment, desc, null).addToBackStack(null).commit();
+                        getFragmentManager().beginTransaction().setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right).replace(R.id.fragment, desc, null).addToBackStack(null).commit();
                         break;
 
                     case 5:
                         desc = new Desc(i);
-                        getFragmentManager().beginTransaction().replace(R.id.fragment, desc, null).addToBackStack(null).commit();
+                        getFragmentManager().beginTransaction().setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right).replace(R.id.fragment, desc, null).addToBackStack(null).commit();
                         break;
 
                     case 6:
                         desc = new Desc(i);
-                        getFragmentManager().beginTransaction().replace(R.id.fragment, desc, null).addToBackStack(null).commit();
+                        getFragmentManager().beginTransaction().setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right).replace(R.id.fragment, desc, null).addToBackStack(null).commit();
                         break;
 
                     case 7:
                         desc = new Desc(i);
-                        getFragmentManager().beginTransaction().replace(R.id.fragment, desc, null).addToBackStack(null).commit();
+                        getFragmentManager().beginTransaction().setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right).replace(R.id.fragment, desc, null).addToBackStack(null).commit();
                         break;
 
                     case 8:
                         desc = new Desc(i);
-                        getFragmentManager().beginTransaction().replace(R.id.fragment, desc, null).addToBackStack(null).commit();
+                        getFragmentManager().beginTransaction().setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right).replace(R.id.fragment, desc, null).addToBackStack(null).commit();
                         break;
 
                     case 9:
                         desc = new Desc(i);
-                        getFragmentManager().beginTransaction().replace(R.id.fragment, desc, null).addToBackStack(null).commit();
+                        getFragmentManager().beginTransaction().setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right).replace(R.id.fragment, desc, null).addToBackStack(null).commit();
                         break;
 
                     case 10:
                         desc = new Desc(i);
-                        getFragmentManager().beginTransaction().replace(R.id.fragment, desc, null).addToBackStack(null).commit();
+                        getFragmentManager().beginTransaction().setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right).replace(R.id.fragment, desc, null).addToBackStack(null).commit();
                         break;
 
                     case 11:
                         desc = new Desc(i);
-                        getFragmentManager().beginTransaction().replace(R.id.fragment, desc, null).addToBackStack(null).commit();
+                        getFragmentManager().beginTransaction().setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right).replace(R.id.fragment, desc, null).addToBackStack(null).commit();
                         break;
 
                     case 12:
                         desc = new Desc(i);
-                        getFragmentManager().beginTransaction().replace(R.id.fragment, desc, null).addToBackStack(null).commit();
+                        getFragmentManager().beginTransaction().setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right).replace(R.id.fragment, desc, null).addToBackStack(null).commit();
                         break;
                 }
             }
@@ -121,6 +121,8 @@ public class Inicio extends Fragment{
         public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
             View v = inflater.inflate(R.layout.desc_edificios, container, false);
 
+            final ImageView btn = (ImageView) v.findViewById(R.id.btnAyuda);
+
             TextView tit1 = (TextView) v.findViewById(R.id.tit1);
             TextView tit2 = (TextView) v.findViewById(R.id.tit2);
             TextView tit3 = (TextView) v.findViewById(R.id.tit3);
@@ -135,11 +137,12 @@ public class Inicio extends Fragment{
             switch(i)
             {
                 case 0: //Edificio A
-                     ed.setText("Edificio A");
+                ed.setText("Edificio A");
                 img.setImageResource(R.drawable.ed_a);
                 tit1.setText("Recursos Financieros");
                 desc1.setText("Pagos a los siguientes conceptos:\n\n-Certificado Oficial de Estudios\n-Certificado Parcial\n-Constancia de Estudios “A” (Sin calificaciones)\n-Constancia de Estudios “B” (Con calificaciones)\n-Duplicado de Credencial\n-Curso de inglés\n-Curso de inglés para no estudiantes\n-Curso de titulación (90 hrs)\n-Curso de verano (60 y 75 hrs)\n-Curso de verano (90 hrs)\n-Dictamen técnico de equivalencia\n-Duplicado de certificado oficial de estudios\n-Elaboración de título\n-Examen de acreditación de idioma extranjero\n-Examen especial\n-Examen profesional o acto protocolario de titulación  (Licenciatura y Postgrado)\n-Ficha y examen de admisión nuevo ingreso\n-Inscripción nuevo ingreso\n-Inscripción y reinscripción posgrado\n-Manual de prácticas de química\n-Programas de materias sellados por el ITM (temarios) por materia\n-Reinscripción 2do semestre\n-Reinscripción 3er semestre en adelante\n-Reposición de constancia de liberación de inglés\n-Reposición de tarjetón de acceso\n-Retraso entrega de libros (por día)\n-Semestre cero");
-                    break;
+                txt = "Hola Bitches";
+                break;
 
                 case 1: //Edificio B
                     ed.setText("Edificio B");
@@ -150,6 +153,7 @@ public class Inicio extends Fragment{
                     desc2.setText("-Hemeroteca\n-Centro de lectura colibrí (la institución cuenta con 1000 ejemplares de literarios como: novelas, cuentos, poesía, etc)\n-Módulo de servicios digitales (acceso a computadoras, edificio B planta alta)\n-Módulo de impresión y fotocopiado\n-Asesorías para manejo de los recursos bibliográficos\n-Sala de proyección de vídeos\n-Sala de capacitación “Martinez Palomera”. ");
                     tit3.setText("Programa a actividades complementarias");
                     desc3.setText("-Fomento a la lectura (Círculos de lectura en diferentes modalidades, inscripciones al inicio del semestre)\n-Desarrollo de habilidades informativas (taller de duración de 20 hrs, 12 hrs presenciales y 8 en línea)\n-Taller DHI\n-Otros talleres de escritura creativa y escritura académica, entre otros.(Inscripciones al inicio de semestre)");
+                    txt="Edificio B";
                     break;
 
                 case 2: //Edificio D
@@ -219,20 +223,33 @@ public class Inicio extends Fragment{
                     img.setImageResource(R.drawable.inicio);
                     break;
             }
+
+
+            btn.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+
+                    switch(cont)
+                    {
+                        case 0:
+                            cont = 1;
+                            VentanaEmergente ventana = new VentanaEmergente(txt);
+                            getFragmentManager().beginTransaction().setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out).replace(R.id.Ventana, ventana, null).addToBackStack(null).commit();
+                            break;
+
+                        case 1:
+                            cont = 0;
+                            ventana = new VentanaEmergente(txt);
+                            FragmentTransaction ft = getFragmentManager().beginTransaction().setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out).replace(R.id.Ventana, ventana, null);
+                            ft.hide(ventana);
+                            ft.commit();
+                            break;
+                    }
+
+                }
+            });
             return v;
         }
 
     }
 
-    @SuppressLint("ValidFragment")
-    public class Ventana extends Fragment
-    {
-        @Nullable
-        @Override
-        public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-            View v = inflater.inflate(R.layout.ventana_emergente, container, false);
-
-            return v;
-        }
-    }
 }

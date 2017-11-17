@@ -27,7 +27,6 @@
 
     </ListView>
 
-
     <LinearLayout
         android:orientation="vertical"
         android:id="@+id/fragment"
@@ -35,13 +34,4 @@
         android:layout_height="match_parent">
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/Ventana"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:orientation="horizontal"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="305dp"
-        tools:ignore="MissingConstraints">
-    </LinearLayout>
 </android.support.constraint.ConstraintLayout>

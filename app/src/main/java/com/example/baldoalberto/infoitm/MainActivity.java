@@ -24,21 +24,21 @@ public class MainActivity extends AppCompatActivity {
             switch (item.getItemId()) {
                 case R.id.navigation_inicio:
                     Inicio inicio = new Inicio();
-                    FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+                    FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction().setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
                     fragmentTransaction.replace(R.id.fragment, inicio, "fragment2");
                     fragmentTransaction.commit();
                     return true;
 
                 case R.id.navigation_mapa:
                     Mapa mapa = new Mapa();
-                    fragmentTransaction = getSupportFragmentManager().beginTransaction();
+                    fragmentTransaction = getSupportFragmentManager().beginTransaction().setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
                     fragmentTransaction.replace(R.id.fragment, mapa, "fragment2");
                     fragmentTransaction.commit();
                     return true;
 
                 case R.id.navigation_acerca:
                     AcercaDe acerca = new AcercaDe();
-                    fragmentTransaction = getSupportFragmentManager().beginTransaction();
+                    fragmentTransaction = getSupportFragmentManager().beginTransaction().setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
                     fragmentTransaction.replace(R.id.fragment, acerca, "fragment3");
                     fragmentTransaction.commit();
                     return true;
@@ -47,16 +47,13 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-    private void startActivity(MainActivity mainActivity, Class<MainActivity> mainActivityClass) {
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         Inicio inicio = new Inicio();
-        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction().setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out);
         fragmentTransaction.replace(R.id.fragment, inicio, "fragment3");
         fragmentTransaction.commit();
 
