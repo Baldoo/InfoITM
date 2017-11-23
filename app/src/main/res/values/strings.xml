@@ -22,18 +22,51 @@
     </array>
 
     <array name="descripcionEd">
-      1  <item>En este edificio se encuentra la biblioteca y talleres de lectura.</item>
-      2  <item>En este edificio se encuentra vinculación.</item>
-      3  <item>En este edificio se encuentra las oficinas de dirección y tramites con financieros.</item>
-      4  <item>En este edificio se encuentra los cubículos de los maestros de Contabilidad.</item>
-      5  <item>En este edificio se encuentran los coordinadores de las carreras, el departamento de servicios escolares, el departamento académico de Ing. Química, además de los encargados de servicio social, titulación y traslados.</item>
-      6  <item>En este edificio se encuentran los laboratorios de química, algunos cubículos de los maestros y un almacén de este departamento.</item>
-      7  <item>En este edificio se encuentra el departamento de Ing. Sistemas Computacionales, así como los cubículos de los maestros de esta misma área.</item>
-      8  <item>En este edificio se encuentra los laboratorios de computación, mantenimiento de cómputo y algunos cubículos de los maestros de esta área.</item>
-      9  <item>En este edificio se encuentran los talleres de Ing. Mecánica y el Servicio Médico.</item>
-      10  <item>En este edificio se encuentran el almacén de Ing. Eléctrica y algunos cubículos de los maestros de esta área.</item>
-      11  <item>En este edificio se encuentra las oficinas del departamento de idiomas, así como oficinas y salones de clases.</item>
-        12 <item>En este edificio se encuentra los almacenes de limpieza y el préstamo de materiales pesados.</item>
-       13 <item>En este edificio se encuentra los laboratorios de Electrónica, un almacén de materiales y algunos cubículos de maestros de esta área.</item>
+        1
+        <item>En este edificio se encuentra la biblioteca y talleres de lectura.</item>
+        2
+        <item>En este edificio se encuentra vinculación.</item>
+        3
+        <item>En este edificio se encuentra las oficinas de dirección y tramites con financieros.
+        </item>
+        4
+        <item>En este edificio se encuentra los cubículos de los maestros de Contabilidad.</item>
+        5
+        <item>En este edificio se encuentran los coordinadores de las carreras, el departamento de
+            servicios escolares, el departamento académico de Ing. Química, además de los encargados
+            de servicio social, titulación y traslados.
+        </item>
+        6
+        <item>En este edificio se encuentran los laboratorios de química, algunos cubículos de los
+            maestros y un almacén de este departamento.
+        </item>
+        7
+        <item>En este edificio se encuentra el departamento de Ing. Sistemas Computacionales, así
+            como los cubículos de los maestros de esta misma área.
+        </item>
+        8
+        <item>En este edificio se encuentra los laboratorios de computación, mantenimiento de
+            cómputo y algunos cubículos de los maestros de esta área.
+        </item>
+        9
+        <item>En este edificio se encuentran los talleres de Ing. Mecánica y el Servicio Médico.
+        </item>
+        10
+        <item>En este edificio se encuentran el almacén de Ing. Eléctrica y algunos cubículos de los
+            maestros de esta área.
+        </item>
+        11
+        <item>En este edificio se encuentra las oficinas del departamento de idiomas, así como
+            oficinas y salones de clases.
+        </item>
+        12
+        <item>En este edificio se encuentra los almacenes de limpieza y el préstamo de materiales
+            pesados.
+        </item>
+        13
+        <item>En este edificio se encuentra los laboratorios de Electrónica, un almacén de
+            materiales y algunos cubículos de maestros de esta área.
+        </item>
     </array>
+    <string name="title_activity_maps">Map</string>
 </resources>

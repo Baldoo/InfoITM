@@ -16,9 +16,9 @@ import android.widget.TextView;
 public class Inicio extends Fragment{
 
     ListView lst;
-    String[] ed={"Edificio A", "Edificio B", "Edificio D", "Edificio E", "Edificio F", "Edificio G", "Edificio H", "Edificio J", "Edificio L", "Edificio M", "Edificio Q", "Edificio V", "Edificio X"};
-    String[] descripcionEd ={"En este edificio se encuentra las oficinas de dirección y tramites con financieros.", "En este edificio se encuentra la biblioteca y talleres de lectura.", "En este edificio se encuentra los cubículos de los maestros de Contabilidad.", "En este edificio se encuentran el almacén de Ing. Eléctrica y algunos cubículos de los maestros de esta area.", "En este edificio se encuentra el departamento de Ing. Sistemas Computacionales, así como los cubículos de los maestros de esta misma area.", " En este edificio se encuentra los laboratorios de computación, mantenimiento de cómputo y algunos cubículos de los maestros de esta área.", "En este edificio se encuentra los almacenes de limpieza y el préstamo de materiales pesados.", "En este edificio se encuentra las oficinas del departamento de idiomas, así como oficinas y salones de clases.", "En este edificio se encuentra vinculación.", "En este edificio se encuentran los talleres de Ing. Mecánica y el Servicio Médico.", "En este edificio se encuentran los laboratorios de química, algunos cubículos de los maestros y un almacén de este departamento.", "En este edificio se encuentran los coordinadores de las carreras, el departamento de servicios escolares, el departamento académico de Ing. Química, además de los encargados de servicio social, titulación y traslados. ", "En este edificio se encuentra los laboratorios de Electrónica, un almacén de materiales y algunos cubículos de maestros de esta area."};
-    Integer[] imgid={R.drawable.ed_a,R.drawable.inicio,R.drawable.inicio,R.drawable.ed_e,R.drawable.ed_f,R.drawable.ed_g,R.drawable.inicio,R.drawable.ed_j,R.drawable.ed_l,R.drawable.ed_m,R.drawable.inicio,R.drawable.ed_v,R.drawable.inicio};
+    String[] ed={"Edificio A", "Edificio B", "Edificio C", "Edificio D", "Edificio E", "Edificio F", "Edificio G", "Edificio H", "Edificio I", "Edificio J", "Edificio L", "Edificio M", "Edificio Q", "Edificio U", "Edificio V", "Edificio X"};
+    String[] descripcionEd ={"En este edificio se encuentra las oficinas de dirección y tramites con financieros.", "En este edificio se encuentra la biblioteca y talleres de lectura.", "Cafetería del tecnológico", "En este edificio se encuentra los cubículos de los maestros de Contabilidad.", "En este edificio se encuentran el almacén de Ing. Eléctrica y algunos cubículos de los maestros de esta area.", "En este edificio se encuentra el departamento de Ing. Sistemas Computacionales, así como los cubículos de los maestros de esta misma area.", " En este edificio se encuentra los laboratorios de computación, mantenimiento de cómputo y algunos cubículos de los maestros de esta área.", "En este edificio se encuentra los almacenes de limpieza y el préstamo de materiales pesados.", "Edificio I", "En este edificio se encuentra las oficinas del departamento de idiomas, así como oficinas y salones de clases.", "En este edificio se encuentra vinculación.", "En este edificio se encuentran los talleres de Ing. Mecánica y el Servicio Médico.", "En este edificio se encuentran los laboratorios de química, algunos cubículos de los maestros y un almacén de este departamento.", "En este edificio se encuentran Ciencias báscicas, el Cómite Ejecutivo de la Sociedad de Alumno (CESA)", "En este edificio se encuentran los coordinadores de las carreras, el departamento de servicios escolares, el departamento académico de Ing. Química, además de los encargados de servicio social, titulación y traslados. ", "En este edificio se encuentra los laboratorios de Electrónica, un almacén de materiales y algunos cubículos de maestros de esta area."};
+    Integer[] imgid={R.drawable.ed_a,R.drawable.ed_b,R.drawable.ed_c,R.drawable.ed_d,R.drawable.ed_e,R.drawable.ed_f,R.drawable.ed_g,R.drawable.inicio,R.drawable.ed_i, R.drawable.ed_j,R.drawable.ed_l,R.drawable.ed_m,R.drawable.inicio,R.drawable.ed_u,R.drawable.ed_v,R.drawable.ed_x};
     static int cont = 0;
     static String txt;
 
@@ -101,6 +101,20 @@ public class Inicio extends Fragment{
                         desc = new Desc(i);
                         getFragmentManager().beginTransaction().setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right).replace(R.id.fragment, desc, null).addToBackStack(null).commit();
                         break;
+
+                    case 13:
+                        desc = new Desc(i);
+                        getFragmentManager().beginTransaction().setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right).replace(R.id.fragment, desc, null).addToBackStack(null).commit();
+                        break;
+
+                    case 14:
+                        desc = new Desc(i);
+                        getFragmentManager().beginTransaction().setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right).replace(R.id.fragment, desc, null).addToBackStack(null).commit();
+                        break;
+                    case 15:
+                        desc = new Desc(i);
+                        getFragmentManager().beginTransaction().setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right).replace(R.id.fragment, desc, null).addToBackStack(null).commit();
+                        break;
                 }
             }
         });
@@ -156,60 +170,67 @@ public class Inicio extends Fragment{
                     txt="Edificio B";
                     break;
 
+                case 3: //Edificio C
+                    break;
                 case 2: //Edificio D
                     ed.setText("Edificio D");
                     img.setImageResource(R.drawable.inicio);
                     break;
 
-                case 3: //Edificio E
+                case 4: //Edificio E
                     ed.setText("Edificio E");
                     img.setImageResource(R.drawable.ed_e);
                     break;
 
-                case 4: //Edificio F
+                case 5: //Edificio F
                     ed.setText("Edificio F");
                     img.setImageResource(R.drawable.ed_f);
                     tit1.setText("Departamento de Sistemas");
                     desc1.setText("-Cargas académicas de los maestros\n-Organización de eventos\n-Documentación del proceso de administración\n-Documentación propia del departamento\n-Documentación de los alumnos\n-Resolver problemas en cargas académicas\n-Justificaciones\n-Comisiones para eventos\n-Control de horarios de laboratorios del G\n-Control de horario de maestros ");
                     break;
 
-                case 5: //Edificio G
+                case 6: //Edificio G
                     ed.setText("Edificio G");
                     img.setImageResource(R.drawable.ed_g);
                     tit1.setText("Mantenimiento");
                     desc1.setText("-Mantenimiento de los laboratorios\n-Instalaciones de software");
                     break;
 
-                case 6: //Edificio H
+                case 7: //Edificio H
                     ed.setText("Edificio H");
                     img.setImageResource(R.drawable.inicio);
                     break;
 
-                case 7: //Edificio J
+                case 8: //Edificio I
+                    break;
+
+                case 9: //Edificio J
                     ed.setText("Edificio J");
                     img.setImageResource(R.drawable.ed_j);
                     tit1.setText("Centro de Información");
                     desc1.setText("-Inscripciones\n-Reinscripciones\n-Curso de inglés\n-Curso de japonés\n-Costo de libros\n-Generadores de los vouchers de pago de los cursos, como de los libros\n-Exámenes");
                     break;
 
-                case 8: //Edificio L
+                case 10: //Edificio L
                     ed.setText("Edificio L");
                     img.setImageResource(R.drawable.ed_l);
                     break;
 
-                case 9: //Edificio M
+                case 11: //Edificio M
                     ed.setText("Edificio M");
                     img.setImageResource(R.drawable.ed_m);
                     break;
 
-                case 10: //Edificio Q
+                case 12: //Edificio Q
                     ed.setText("Edificio Q");
                     img.setImageResource(R.drawable.inicio);
                     tit1.setText("Almacén");
                     desc1.setText("-Préstamo de herramientas de laboratorio");
                     break;
 
-                case 11: //Edificio V
+                case 13:
+                    break;
+                case 14: //Edificio V
                     ed.setText("Edificio V");
                     img.setImageResource(R.drawable.ed_v);
                     tit1.setText("Departamento de Servicios Escolares");
@@ -218,7 +239,7 @@ public class Inicio extends Fragment{
                     desc2.setText("-Documentos de titulación\n-Opciones de titulación");
                     break;
 
-                case 12: //Edificio X
+                case 15: //Edificio X
                     ed.setText("Edificio X");
                     img.setImageResource(R.drawable.inicio);
                     break;
